@@ -1,0 +1,53 @@
+.admin-layout {
+  display: flex;
+}
+.admin-layout .sidebar {
+  width: 100vm;
+  height: 100vm;
+  background-color: #ffffff;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 10;
+}
+.admin-layout .sidebar h4 {
+  text-align: center;
+  margin-bottom: 30px;
+}
+.admin-layout .sidebar .nav-link {
+  color: #333;
+  padding: 10px 15px;
+  border-radius: 6px;
+  transition: all 0.2s;
+}
+.admin-layout .sidebar .nav-link:hover {
+  background-color: #f0f0f0;
+  color: #000;
+}
+.admin-layout .main-content {
+  margin-left: 100vm;
+  width: calc(100% - 100vm);
+  min-height: 100vh;
+  background-color: #f8f9fa;
+}
+.admin-layout .main-content .page-content {
+  padding: 20px;
+}
+.admin-layout .main-content .page-content table {
+  width: 179vh;
+  background-color: #fff;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+.admin-layout .main-content .page-content table th, .admin-layout .main-content .page-content table td {
+  padding: 12px 16px;
+  text-align: left;
+  border-bottom: 1px solid #ddd;
+}
+.admin-layout .main-content .page-content table thead {
+  background-color: #f1f1f1;
+}
+
+/*# sourceMappingURL=AdminLayout.css.map */
