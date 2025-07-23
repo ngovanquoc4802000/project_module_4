@@ -1,0 +1,130 @@
+@use '../abstract/media' as *;
+
+
+.explore-container {
+  margin-top: 32px;
+  padding: 32px 0;
+  display: flex;
+  flex-direction: column;
+
+  .explore-header {
+    margin-bottom: 24px;
+
+    .explore-header-row {
+      display: flex;
+      align-items: center;
+      justify-content: flex-start;
+      flex-wrap: wrap;
+      gap: 16px;
+
+      .explore-left {
+        display: flex;
+        align-items: center;
+        gap: 128px;
+        flex-wrap: wrap;
+      }
+
+      .explore-title {
+        font-size: 24px;
+        font-weight: bold;
+        color: #333;
+      }
+
+      .explore-tabs {
+        display: flex;
+        gap: 12px;
+
+        button {
+          background: none;
+          border: none;
+          padding: 6px 12px;
+          font-size: 16px;
+          color: #666;
+          border-bottom: 2px solid transparent;
+          cursor: pointer;
+
+          &.active {
+            font-weight: bold;
+            color: #e03;
+            border-bottom: 2px solid #e03;
+          }
+        }
+      }
+
+      .explore-top-filters {
+        margin-left: auto;
+        display: flex;
+        gap: 12px;
+
+        select {
+          padding: 8px 36px 8px 12px;
+          border-radius: 6px;
+          border: 1px solid #ccc;
+          font-size: 14px;
+          background: white;
+          cursor: pointer;
+            appearance: none;
+              background-image: url("data:image/svg+xml,%3Csvg width='12' height='8' viewBox='0 0 12 8' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M1 1L6 6L11 1' stroke='%23333' stroke-width='1.5'/%3E%3C/svg%3E");
+  background-repeat: no-repeat;
+  background-position: right 12px center;
+  background-size: 16px;
+
+        }
+      }
+    }
+  }
+
+  .explore-body {
+    display: flex;
+    gap: 24px;
+
+    .explore-sidebar {
+  width: 200px;
+  background-color: #fff;
+  flex-shrink: 0;
+   align-self: flex-start;
+  }
+
+  .explore-main {
+    flex: 1;
+    padding-left: 20px;
+  }
+}
+
+  .explore-menu {
+    background-color: #ffffff;
+    border-radius: 6px;
+  }
+
+  ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+
+    li {
+      padding: 8px 16px;
+      margin: 0;
+      font-size: 14px;
+      color: #333;
+      cursor: pointer;
+      transition: background-color 0.2s, color 0.2s;
+
+
+      &:hover {
+        background-color: #f0f0f0; 
+        color: #e03;               
+      }
+    }
+  }
+}
+
+
+    .explore-main {
+      flex: 1;
+
+      .explore-grid {
+        display: grid;
+        grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+        gap: 20px;
+      }
+    }
