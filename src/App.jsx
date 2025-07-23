@@ -7,7 +7,7 @@ import UserPage from './pages/UserPage';
 import FoodPage from './pages/FoodPage';
 import Dashboard from './pages/Dashboard';
 
-import './styles/AdminLayout'; //
+import './styles/AdminLayout.scss'; //
 
 function App() {
   return (
