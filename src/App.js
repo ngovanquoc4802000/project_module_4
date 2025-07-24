@@ -20,13 +20,16 @@ import './styles/components/ExploreFilters.scss';
 import './styles/components/ExploreCard.scss';
 
 function App() {
+  
   const [selectedCategory, setSelectedCategory] = useState('Deal hôm nay');
+
   const [selectedTab, setSelectedTab] = useState('Mới nhất');
 
   return (
     <div className="container">
 
       {/* Giao tận nơi */}
+      
       <div className="section-header">
         <div className="section-title-tabs">
           <div className="section-title-with-icon">

@@ -10,7 +10,9 @@ export default function ExplorePage() {
 
   return (
     <div className="explore-container">
+      
       {/* Tiêu đề + Tabs + Dropdown cùng hàng */}
+
       <div className="explore-top-bar">
         <h2 className="explore-title">Khám phá</h2>
         <ExploreTabs selectedTab={selectedTab} onSelectTab={setSelectedTab} />
